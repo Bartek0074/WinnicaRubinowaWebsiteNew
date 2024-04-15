@@ -1,0 +1,26 @@
+@use '../../styles/variables.scss' as *;
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	background-color: $footerBackgroundColor;
+	.text {
+		line-height: 40px;
+		color: $dirtyWhiteColor;
+	}
+	.link {
+		margin-left: 3px;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $dirtyWhiteColor;
+			transition: color 0.3s;
+			&:hover {
+				color: $primaryColor;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@use '../../styles/variables.scss' as *;
+
+.header {
+	padding: 32px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 400px;
+	}
+	.heading {
+		font-size: 32px;
+		padding: 0 16px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Marcellus', serif;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+		span {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		padding: 40px 0;
+		img {
+			width: 480px;
+		}
+		.heading {
+			font-size: 36px;
+			span{
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding: 52px 0;
+		img {
+			width: 520px;
+		}
+		.heading {
+			font-size: 48px;
+			span{
+				font-size: 52px;
+			}
+		}
+	}
+}

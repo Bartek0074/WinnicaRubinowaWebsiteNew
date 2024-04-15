@@ -1,0 +1,25 @@
+@use '../../styles/variables.scss' as *;
+
+.errorPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	button {
+		padding: 8px 40px;
+		font-size: 18px;
+		margin: 0.25em;
+		border: none;
+		border-radius: 8px;
+		color: $dirtyWhiteColor;
+		text-transform: uppercase;
+		font-family: 'Lato', sans-serif;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		background-color: $blueColor;
+		&:hover {
+			background-color: $blueColorHover;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@use '../../styles/variables.scss' as *;
+
+.aboutSection {
+	overflow: hidden;
+	position: relative;
+	background-image: $quoteBackgroundColor,
+		url('../../../public/images/backgrounds/winery-640.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 90px 0;
+	.aboutItems {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		margin-top: 42px;
+	}
+}
+
+@media (min-width: 576px) {
+	.aboutSection {
+		padding: 108px 0;
+		background-image: $aboutBackgroundColor,
+			url('../../../public/images/backgrounds/winery-1920.jpg');
+		.aboutItems {
+			margin-top: 54px;
+
+			.text {
+				margin-top: 54px;
+				font-size: 18px;
+				line-height: 23px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.aboutSection {
+		padding: 132px 0;
+		.aboutItems {
+			margin-top: 64px;
+			.text {
+				margin-top: 64px;
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+	}
+}

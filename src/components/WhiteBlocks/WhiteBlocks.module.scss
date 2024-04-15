@@ -1,0 +1,43 @@
+@use '../../styles/variables.scss' as *;
+
+.whiteBlock {
+	&Left,
+	&Right {
+		position: absolute;
+		height: 30px;
+		width: 55%;
+		background-color: $backgroundColor;
+		transform: skew(45deg);
+	}
+	&Left {
+		bottom: -1px;
+		left: -50px;
+		&Gray {
+			background-color: $contactSectionBackgroundColor;
+		}
+	}
+	&Right {
+		top: -1px;
+		right: -50px;
+	}
+}
+
+@media (min-width: 576px) {
+	.whiteBlock {
+		&Left,
+		&Right {
+			height: 40px;
+			width: 50%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.whiteBlock {
+		&Left,
+		&Right {
+			height: 45px;
+			width: 45%;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@use '../../styles/variables.scss' as *;
+
+.welcomeSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 54px 0;
+	.text {
+		margin-top: 42px;
+		width: 95%;
+		max-width: 1200px;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.welcomeSection {
+		padding: 72px 0;
+		.text {
+			margin-top: 54px;
+			font-size: 18px;
+			line-height: 23px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.welcomeSection {
+		padding: 90px 0;
+		.text {
+			margin-top: 64px;
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+}

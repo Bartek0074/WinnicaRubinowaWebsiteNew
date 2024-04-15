@@ -1,0 +1,16 @@
+@use './variables.scss' as *;
+
+.ant-modal-mask {
+	background-color: #212121bb !important;
+}
+
+.ant-image {
+	transition: transform 0.3s !important;
+	&:hover {
+		transform: scale(1.02) !important;
+	}
+	.ant-image-img {
+		object-fit: cover !important;
+		object-position: center !important;
+	}
+}

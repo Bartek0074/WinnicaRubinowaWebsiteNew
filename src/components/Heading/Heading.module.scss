@@ -1,0 +1,94 @@
+@use '../../styles/variables.scss' as *;
+
+.heading {
+	position: relative;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Marcellus', serif;
+	letter-spacing: 2px;
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -8px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px;
+	}
+	&Primary {
+		color: $lightBlackColor;
+		&::before {
+			background-color: $primaryColor;
+		}
+	}
+	&White {
+		color: $dirtyWhiteColor;
+		&::before {
+			background-color: $dirtyWhiteColor;
+		}
+	}
+	&Small {
+		margin-bottom: 6px;
+		font-size: 20px;
+		&::before {
+			bottom: -2px;
+			height: 2px;
+			width: 40px;
+		}
+	}
+	&Medium {
+		margin-bottom: 8px;
+		font-size: 24px;
+		&::before {
+			bottom: -4px;
+			height: 3px;
+			width: 60px;
+		}
+	}
+	&Large {
+		margin-bottom: 12px;
+		font-size: 28px;
+		&::before {
+			bottom: -6px;
+			height: 4px;
+			width: 80px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.heading {
+		&Small {
+			font-size: 24px;
+			&::before {
+				width: 60px;
+			}
+		}
+		&Medium {
+			font-size: 28px;
+			&::before {
+				width: 80px;
+			}
+		}
+		&Large {
+			font-size: 32px;
+			&::before {
+				width: 100px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.heading {
+		&Small {
+			font-size: 30px;
+		}
+		&Medium {
+			font-size: 34px;
+		}
+		&Large {
+			font-size: 42px;
+		}
+	}
+}

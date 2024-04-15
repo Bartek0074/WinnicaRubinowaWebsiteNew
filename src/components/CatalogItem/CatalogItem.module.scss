@@ -1,0 +1,176 @@
+@use '../../styles/variables.scss' as *;
+
+.catalogItem {
+	position: relative;
+	width: 98%;
+	max-width: 360px;
+	aspect-ratio: 2/3;
+	color: $primaryColorHover;
+	text-align: center;
+	perspective: 1000px;
+	&Averse {
+		padding: 32px;
+		width: 100%;
+		height: 100%;
+		border-radius: 8px;
+		background-size: cover;
+		background-position: center;
+		transition: transform 1s, opacity 1s;
+		background-image: $catalogItemBackground;
+		.badge {
+			position: absolute;
+			left: -15px;
+			top: 15px;
+			padding: 3px 7px;
+			background-color: $primaryColor;
+			border-radius: 5px;
+			border-bottom-left-radius: 0;
+			p {
+				color: $dirtyWhiteColor;
+				letter-spacing: 0.25px;
+				font-weight: 300;
+			}
+			&::before {
+				content: '';
+				border-style: solid;
+				border-width: 15px 15px 0px 10px;
+				border-color: transparent $primaryColorHover transparent transparent;
+				position: absolute;
+				left: -5px;
+				bottom: -20px;
+				transform: rotate(270deg);
+				// position: absolute;
+				// content: '';
+				// width: 10px;
+				// height: 10px;
+				// left: 0;
+				// bottom: -10px;
+				// border: 10px;
+				// background-color: $primaryColorHover;
+			}
+		}
+		.unavailableShadow {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			border-radius: 8px;
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+		.qualitySign {
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			width: 32.5%;
+			aspect-ratio: 1;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.heading {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			font-family: 'Marcellus', serif;
+			text-transform: uppercase;
+			font-size: 28px;
+			letter-spacing: 2px;
+		}
+		img {
+			position: absolute;
+			height: 84%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.image {
+			height: 80%;
+		}
+		.moreInfo,
+		.moreInfoNotAvailable {
+			position: absolute;
+			bottom: 25px;
+			right: 30px;
+			font-size: 17px;
+			span {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.icon {
+					margin-right: 5px;
+					font-size: 22px;
+				}
+			}
+		}
+		.moreInfoNotAvailable {
+			color: $fontRed;
+			span {
+				.icon {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	&Obverse {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-image: $catalogItemBackground;
+		border-radius: 8px;
+		opacity: 0;
+		transform: rotateY(180deg);
+		transition: transform 1s, opacity 1s;
+		.heading {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 32px;
+			font-family: 'Marcellus', serif;
+			text-transform: uppercase;
+			font-size: 28px;
+			letter-spacing: 2px;
+		}
+		.infoList {
+			margin: 0 auto;
+			width: 70%;
+			list-style: none;
+			.infoItem {
+				padding: 12px;
+				font-size: 16px;
+				border-bottom: 1px solid $primaryColorHover;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	&Available {
+		&:hover {
+			.catalogItemAverse {
+				transform: rotateY(-180deg);
+				opacity: 0;
+			}
+			.catalogItemObverse {
+				transform: rotateY(0);
+				opacity: 1;
+			}
+		}
+	}
+	&-quality {
+		position: absolute;
+		left: 5px;
+		bottom: 5px;
+		width: 90px;
+		height: 90px;
+		background-position: center;
+		background-size: cover;
+	}
+}
