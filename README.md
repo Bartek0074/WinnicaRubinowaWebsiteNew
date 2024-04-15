@@ -33,7 +33,7 @@ $ npm start # or yarn start
 ## Technologies
 
 - React,
-- Typescript,
+- TypeScript,
 - SCSS,
 - ANT Design,
 - React Router.
