@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# WinnicaRubinowaWebsiteNew
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My debut website! Made for my family's vineyard. Explore their wines and events here.
 
-## Available Scripts
+This is new version. It introduces a range of upgrades, such as integration with TypeScript etc. [Link](https://github.com/Bartek0074/WinnicaRubinowaWebsite/) to old version.
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+Live Demo [here](https://bartek0074-winnicarubinowanew.netlify.app).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![WinnicaRubinoweWebsiteNewGif](https://github.com/Bartek0074/LiveScoreNew/assets/88652468/59a5c188-8a16-49f4-aa68-d3db86949861)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instructions
 
-### `npm test`
+First clone this repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+$ git clone https://github.com/Bartek0074/WinnicaRubinowaWebsiteNew.git
+```
 
-### `npm run build`
+Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+$ npm install # or yarn
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run it
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ npm start # or yarn start
+```
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- React,
+- Typescript,
+- SCSS,
+- ANT Design,
+- React Router.
+ 
+## Other packages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- react-ui-scrollspy,
+- universal-cookie.
