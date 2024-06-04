@@ -25,9 +25,11 @@ export default function CatalogItem({ wine }: Props) {
 				{!wine.isAvailable ? (
 					<div className={styles.unavailableShadow} />
 				) : null}
-				{wine.hasQualitySign ? <div className={styles.qualitySign}>
-					<img src='./images/other/quality.png'/>
-				</div> : null}
+				{wine.hasQualitySign ? (
+					<div className={styles.qualitySign}>
+						<img src='./images/other/quality.png' />
+					</div>
+				) : null}
 				<h3 className={styles.heading}>{wine.name}</h3>
 				<img
 					className={styles.image}
@@ -55,10 +57,16 @@ export default function CatalogItem({ wine }: Props) {
 				<ul className={styles.infoList}>
 					<li className={styles.infoItem}>{wine.color}</li>
 					<li className={styles.infoItem}>{wine.taste}</li>
-					<li className={styles.infoItem}>Odmiana: {wine.variety}</li>
+					<li
+						className={styles.infoItem}
+						dangerouslySetInnerHTML={{ __html: `${wine.variety}` }}
+					></li>
+
 					<li className={styles.infoItem}>Rocznik: {wine.year}</li>
 					<li className={styles.infoItem}>Alkohol: {wine.alcohol}</li>
-					<li className={styles.infoItem}>{wine.description}</li>
+					{wine.description && (
+						<li className={styles.infoItem}>{wine.description}</li>
+					)}
 				</ul>
 			</div>
 		</div>
