@@ -31,7 +31,7 @@ const wineVintages: WineVintage[] = [
 				color: 'Białe',
 				taste: 'Półsłodkie',
 				variety:
-					'Jutrzenka&nbsp;40%, Solaris&nbsp;40%, Bianca&nbsp;10%, Muscaris&nbsp;10%',
+					'Jutrzenka&nbsp;40%, Solaris&nbsp;40%, Bianca&nbsp;15%, Muscaris&nbsp;5%',
 				alcohol: '12%',
 				description: '',
 				imageSrc: './images/wines/turkus.png',
@@ -65,7 +65,7 @@ const wineVintages: WineVintage[] = [
 				name: 'Agat',
 				color: 'Białe',
 				taste: 'Wytrawne',
-				variety: 'Riesling&nbsp;50%, Johanniter&nbsp;25%, Hibernal&nbsp;25%',
+				variety: 'Riesling&nbsp;45%, Johanniter&nbsp;30%, Sibera&nbsp;25%',
 				alcohol: '11%',
 				description: '',
 				imageSrc: './images/wines/agat.png',
