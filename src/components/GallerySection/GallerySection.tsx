@@ -21,7 +21,7 @@ const GallerySection = () => {
 						<Image
 							width={'100%'}
 							height={'100%'}
-							src='./images/gallery/gallery2.png'
+							src='./images/gallery/gallery2.jpg'
 						/>
 					</div>
 					<div className={styles.imageThird}>
@@ -50,7 +50,7 @@ const GallerySection = () => {
 						<Image
 							width={'100%'}
 							height={'100%'}
-							src='./images/gallery/gallery6.png'
+							src='./images/gallery/gallery6.jpg'
 						/>
 					</div>
 				</div>
