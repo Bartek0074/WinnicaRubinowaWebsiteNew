@@ -20,6 +20,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: false,
+				image: {
+					height: '84%',
+					top: '49.5%',
+				},
 			},
 			{
 				year: 2023,
@@ -34,6 +38,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: false,
+				image: {
+					height: '83.5%',
+					top: '53%',
+				},
 			},
 			{
 				year: 2023,
@@ -47,6 +55,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: true,
 				hasQualitySign: false,
+				image: {
+					height: '83.5%',
+					top: '52%',
+				},
 			},
 			{
 				year: 2023,
@@ -60,6 +72,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: false,
+				image: {
+					height: '79.5%',
+					top: '52.5%',
+				},
 			},
 			{
 				year: 2023,
@@ -73,6 +89,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: true,
 				hasQualitySign: false,
+				image: {
+					height: '81%',
+					top: '52.5%',
+				},
 			},
 		],
 	},
@@ -92,6 +112,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: false,
+				image: {
+					height: '83.5%',
+					top: '51.5%',
+				},
 			},
 			{
 				year: 2022,
@@ -106,6 +130,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: true,
+				image: {
+					height: '78%',
+					top: '52.5%',
+				},
 			},
 			{
 				year: 2022,
@@ -120,6 +148,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: false,
 				hasQualitySign: false,
+				image: {
+					height: '79%',
+					top: '52%',
+				},
 			},
 			{
 				year: 2022,
@@ -133,6 +165,10 @@ const wineVintages: WineVintage[] = [
 				isAvailable: true,
 				isNew: true,
 				hasQualitySign: false,
+				image: {
+					height: '78%',
+					top: '52%',
+				},
 			},
 		],
 	},

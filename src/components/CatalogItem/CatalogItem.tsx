@@ -35,6 +35,10 @@ export default function CatalogItem({ wine }: Props) {
 					className={styles.image}
 					src={wine.imageSrc}
 					alt={`Wino ${wine.name}`}
+					style={{
+						top: wine.image.top,
+						height: wine.image.height,
+					}}
 				/>
 				{wine.isAvailable ? (
 					<p className={styles.moreInfo}>

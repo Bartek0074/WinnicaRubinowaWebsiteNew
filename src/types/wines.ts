@@ -15,4 +15,8 @@ export interface Wine {
 	isAvailable: boolean;
 	isNew: boolean;
 	hasQualitySign: boolean;
+	image:{
+		height: string;
+		top: string;
+	}
 }
