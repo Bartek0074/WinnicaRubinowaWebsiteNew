@@ -31,7 +31,7 @@ const wineVintages: WineVintage[] = [
 				color: 'Białe',
 				taste: 'Półsłodkie',
 				variety:
-					'Jutrzenka&nbsp;40%, Solaris&nbsp;10%, Bianca&nbsp;10%, Muscaris&nbsp;10%',
+					'Jutrzenka&nbsp;40%, Solaris&nbsp;40%, Bianca&nbsp;10%, Muscaris&nbsp;10%',
 				alcohol: '12%',
 				description: '',
 				imageSrc: './images/wines/turkus.png',
