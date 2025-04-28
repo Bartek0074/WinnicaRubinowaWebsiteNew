@@ -6,6 +6,47 @@ import CatalogItem from '../CatalogItem/CatalogItem';
 
 const wineVintages: WineVintage[] = [
 	{
+		wineVintage: 2024,
+		wines: [
+			{
+				year: 2024,
+				name: 'Turkus',
+				color: 'Białe',
+				taste: 'Półsłodkie',
+				variety:
+					'Solaris&nbsp;25%, Jutrzenka&nbsp;25%, Hibernal&nbsp;25%, Johanniter&nbsp;25%',
+				alcohol: '11.5%',
+				description: 'Wino o jasnożółtym zabarwieniu, delikatne w smaku. Pachnie intensywnie owocami cytrusowymi i świeżym jabłkiem, w ustach czuć grejpfruta. Doskonale komponuje się z deserami i niektórymi serami.',
+				imageSrc: './images/wines/turkus.png',
+				isAvailable: true,
+				isNew: false,
+				hasQualitySign: false,
+				image: {
+					height: '83.5%',
+					top: '51.5%',
+				},
+			},
+			{
+				year: 2024,
+				name: 'Diament',
+				color: 'Różowe',
+				taste: 'Półsłodkie',
+				variety:
+					'Regent&nbsp;100%',
+				alcohol: '11.5%',
+				description: 'Przyjemne, lekkie wino o różowym zabarwieniu. W zapachu, a także smaku mocno wyczuwalna truskawka. Jest doskonałym wyborem do lekkich potraw, sałatek i niektórych deserów.',
+				imageSrc: './images/wines/diament.png',
+				isAvailable: true,
+				isNew: false,
+				hasQualitySign: false,
+				image: {
+					height: '81.5%',
+					top: '53%',
+				},
+			},
+		],
+	},
+	{
 		wineVintage: 2023,
 		wines: [
 			{
@@ -33,7 +74,8 @@ const wineVintages: WineVintage[] = [
 				taste: 'Wytrawne',
 				variety: 'Riesling&nbsp;45%, Johanniter&nbsp;30%, Sibera&nbsp;25%',
 				alcohol: '11%',
-				description: 'Wino białe wytrawne, o jasnosłomkownej barwie i wysokiej kwasowości. W nosie i ustach dominują aromaty świeżych jabłek, cytryny i grejpfruta. Idealne do białych mięs, ryb, owoców morza oraz serów.',
+				description:
+					'Wino białe wytrawne, o jasnosłomkownej barwie i wysokiej kwasowości. W nosie i ustach dominują aromaty świeżych jabłek, cytryny i grejpfruta. Idealne do białych mięs, ryb, owoców morza oraz serów.',
 				imageSrc: './images/wines/agat.png',
 				isAvailable: true,
 				isNew: false,
@@ -48,24 +90,6 @@ const wineVintages: WineVintage[] = [
 	{
 		wineVintage: 2022,
 		wines: [
-			{
-				year: 2022,
-				name: 'Szmaragd',
-				color: 'Białe',
-				taste: 'Półwytrawne',
-				variety: 'Sibera&nbsp;100%',
-				alcohol: '11%',
-				description:
-					'Wino o jasnozłocistej barwie i przyjemnej kwasowości. W zapachu wyczuwalne owoce cytrusowe, a w smaku zielony grejfrut. Dobrze komponuje się z daniami z drobiu, sałatkami i świeżymi serami.',
-				imageSrc: './images/wines/szmaragd.png',
-				isAvailable: true,
-				isNew: false,
-				hasQualitySign: false,
-				image: {
-					height: '83.5%',
-					top: '51.5%',
-				},
-			},
 			{
 				year: 2022,
 				name: 'Hematyt',

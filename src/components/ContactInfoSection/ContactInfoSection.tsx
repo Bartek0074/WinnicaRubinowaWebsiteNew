@@ -24,7 +24,7 @@ const ContactInfoSection = () => {
 						</p>
 					</div>
 					<p>winnicarubinowa@gmail.com</p>
-					<p>tel. 724 508 408</p>
+					<p>tel. 579 256 894</p>
 					<p>tel. 695 445 001</p>
 				</div>
 				<div className={styles.map}>
