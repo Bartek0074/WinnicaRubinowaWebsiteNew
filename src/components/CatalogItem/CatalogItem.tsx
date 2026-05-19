@@ -27,7 +27,7 @@ export default function CatalogItem({ wine }: Props) {
 				) : null}
 				{wine.hasQualitySign ? (
 					<div className={styles.qualitySign}>
-						<img src='./images/other/quality.png' />
+						<img src='./images/other/quality.png' alt='Znak jakości' />
 					</div>
 				) : null}
 				<h3 className={styles.heading}>{wine.name}</h3>
