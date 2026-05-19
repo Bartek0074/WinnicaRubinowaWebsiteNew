@@ -17,7 +17,7 @@ const Footer = () => {
 					<span>|</span>
 				</p>
 				<div className={styles.link}>
-					<a href='https://www.facebook.com/WinnicaRubinowa/' target='_blank'>
+					<a href='https://www.facebook.com/WinnicaRubinowa/' target='_blank' rel='noopener noreferrer'>
 						<FaFacebook className={styles.icon} />
 					</a>
 				</div>
