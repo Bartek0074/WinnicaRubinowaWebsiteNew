@@ -16,7 +16,10 @@
 	border: none;
 	border-bottom-left-radius: 5px;
 	cursor: pointer;
-	transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+	transition:
+		color 0.3s,
+		background-color 0.3s,
+		box-shadow 0.3s;
 	&:hover {
 		color: $lightBlackColorHover;
 		background-color: $burgerBtnBackgroundColorHover;
@@ -64,7 +67,7 @@
 		}
 		.navItem {
 			color: $dirtyWhiteColor;
-			padding: 0.5m;
+			padding: 0.5em;
 			font-size: 24px;
 			text-transform: uppercase;
 			text-decoration: none;
